@@ -154,22 +154,22 @@
       }
       .face {
         &:hover {
-          background-color: blue;
+          background-color: #3b5998;
         }
       }
       .insta {
         &:hover {
-          background-color: rgb(163, 27, 84);
+          background-color: #e44a73;
         }
       }
       .twiter {
         &:hover {
-          background-color: #33a3e4;
+          background-color: #1da1f2;
         }
       }
       .linkd {
         &:hover {
-          background-color: #1c8fdb;
+          background-color: #0073b2;
         }
       }
       @media (max-width: 992px) {
