@@ -7,7 +7,3 @@ import "@fortawesome/fontawesome-free/js/brands";
 import "bootstrap/dist/js/bootstrap.bundle";
 
 const home = require("./home");
-document.open();
-document.write("<h1>mostafa</h1>");
-// document.getElementById("israa").innerHTML = "mos";
-document.close();

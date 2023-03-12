@@ -1,1 +1,254 @@
+// start header
+header {
+  //start top-header
 
+  // start sidemenu - sidectegory
+  #side-bars-menu {
+    width: 350px;
+    background-color: #fff;
+    height: 100%;
+    padding: 20px 20px;
+    #closebtnmenu {
+      text-decoration: none;
+      font-size: 20px;
+      color: #555;
+      display: block;
+      transition: 0.3s;
+      border-bottom: 2px solid #eeeeee;
+      h4 {
+        font-size: 18px;
+        color: #3474d4;
+        font-weight: 600;
+      }
+    }
+    a {
+      padding: 15px 0;
+      text-transform: capitalize;
+      color: #444444;
+      border-bottom: 1px solid #ededed;
+      font-size: 15px;
+      font-weight: 500;
+      display: block;
+    }
+  }
+  .side-bar,
+  .side-bar-category,
+  .side-bar-menu {
+    .sidenav,
+    .sidecategory,
+    .sidemenu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: 0.5s;
+    }
+    .side-bar-toggle,
+    .side-bar-category,
+    .side-bar-menu {
+      color: #777;
+      svg {
+        font-size: 36px;
+        @include lgwidth {
+          font-size: 26px;
+        }
+      }
+    }
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  // end
+
+  // start
+
+  .button-user {
+    .user {
+      button {
+        svg {
+          font-size: 36px;
+          @include lgwidth {
+            font-size: 26px;
+          }
+          color: $second-color;
+          &:hover {
+            color: $third-color;
+          }
+        }
+      }
+      ul {
+        transform: translate(-128px, 40px) !important;
+        a {
+          color: $second-color;
+          font-size: 13px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .button-wishlist,
+  .button-cart {
+    button {
+      background-color: transparent;
+      a {
+        color: $second-color;
+        transition: 0.3s;
+        &:hover {
+          color: $third-color;
+        }
+      }
+      svg {
+        font-size: 36px;
+        @include lgwidth {
+          font-size: 26px;
+        }
+      }
+      span {
+        transition: 0.3s;
+        font-size: 12px;
+        font-weight: 600;
+        right: 0;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        color: $white;
+        border-radius: 10px;
+        background-color: $second-color;
+        bottom: 0;
+        padding: 0 4px;
+        @include lgwidth {
+          height: 15px;
+          width: 15px;
+          font-size: 10px;
+        }
+        &:hover {
+          color: $white;
+          background-color: $black;
+        }
+      }
+    }
+  }
+
+  // end
+  .top-header {
+    .social {
+      a {
+        width: 25px;
+        height: 25px;
+        background: $main-color;
+        color: $second-color;
+        font-size: 15px;
+        transition: 0.4s;
+        &:hover {
+          color: $white;
+        }
+      }
+      .fac:hover {
+        background-color: #3b5998;
+      }
+      .tw:hover {
+        background-color: #1da1f2;
+      }
+      .ins:hover {
+        background-color: #e44a73;
+      }
+      .in:hover {
+        background-color: #0073b2;
+      }
+    }
+    .offer {
+      p {
+        font-size: 13px;
+        color: $second-color;
+      }
+    }
+    .lang-cur {
+      a {
+        font-size: 14px;
+        transition: all 0.3s ease 0s;
+        color: $second-color;
+      }
+      ul {
+        left: -45px !important;
+      }
+    }
+  }
+  //end top-header
+  // start middle-header
+  .middle-header {
+    .logo {
+      img {
+        width: 125px;
+      }
+    }
+    .search {
+      input {
+        outline: none;
+        background-color: #f7f7f7;
+        font-size: 14px;
+        font-weight: 400;
+        color: $second-color;
+      }
+      button {
+        right: 0;
+        background-color: transparent;
+        font-size: 16px;
+        height: 100%;
+        color: $second-color;
+        font-weight: 400;
+        &:hover {
+          color: $third-color;
+        }
+      }
+    }
+  }
+  // end middle-header
+  // start bottom-header
+  .bottom-header {
+    .links {
+      li {
+        margin: 0 15px;
+        &:hover {
+          .nav-link::before {
+            background: $third-color;
+            width: 100%;
+          }
+          .nav-link {
+            color: $third-color;
+          }
+        }
+        .nav-link {
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: uppercase;
+          padding: 0 !important;
+          color: #444444;
+          display: block;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            height: 2px;
+            width: 0;
+            left: 0;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+  }
+  // end bottom-header
+}
