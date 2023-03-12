@@ -15,9 +15,11 @@ module.exports = {
         filename: 'my-first-webpack.js',
         assetModuleFilename: "assets/[name][ext]",
     },
+    target: ['web', 'es5'],
     devServer: {
         port: 8000,
         open: true,
+        hot: false,
         static: {
             directory: path.join(__dirname, "dev"),
         },
